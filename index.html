@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Excalibur - Digitized Artifacts</title>
+    <style>
+        /* CSS Reset and Variables */
+        :root {
+            --primary-color: #2c3e50;
+            --accent-color: #3498db;
+            --background-color: #f8f9fa;
+            --text-color: #333;
+            --card-bg: #ffffff;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: var(--background-color);
+            color: var(--text-color);
+        }
+
+        /* Header Styling */
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 3rem 1rem;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0 0 1rem 0;
+        }
+
+        header p {
+            max-width: 800px;
+            margin: 0 auto;
+            font-size: 1.1rem;
+            text-align: justify;
+        }
+
+        /* Main Content and Layout */
+        main {
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        section {
+            margin-bottom: 4rem;
+        }
+
+        section>p {
+            margin-bottom: 2rem;
+            font-size: 1.1rem;
+            color: #555;
+        }
+
+        /* Artifact Grid */
+        .artifact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        /* Individual Artifact Card */
+        .artifact-card {
+            background-color: var(--card-bg);
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .artifact-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .artifact-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-bottom: 1px solid #eee;
+        }
+
+        .artifact-info {
+            padding: 1.5rem;
+        }
+
+        .artifact-info h3 {
+            margin-top: 0;
+            color: var(--primary-color);
+        }
+
+        .artifact-info p {
+            margin: 0.5rem 0;
+            font-size: 0.95rem;
+        }
+
+        /* OpenLIME Button */
+        .openlime-link {
+            display: inline-block;
+            margin-top: 1rem;
+            padding: 0.6rem 1.2rem;
+            background-color: var(--accent-color);
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: bold;
+            transition: background-color 0.2s;
+        }
+
+        .openlime-link:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Project Excalibur</h1>
+        <p>Welcome to the digital repository that features digitized archaeological artifacts acquired during the
+            <strong>Toolkit 1</strong> activity of the project Excalibur. <strong>Toolkit 1</strong> is developed by
+            <strong>CRS4</strong>, and the objects showcased in this repository originate from <strong>Use Case
+                2</strong> (Partner: SA) and <strong>Use Case 3</strong> (Partner: SMAEK). Explore the artifacts through
+            interactive relightable image visualization obtained from MLIC data, powered by OpenLIME.
+        </p>
+    </header>
+
+    <main>
+        <!-- ==============================
+             SECTION: USE CASE 2
+             ============================== -->
+        <section id="use-case-2">
+            <h2>Use Case 2</h2>
+            <p>This section explores the digitized artifacts belonging to Use Case 2. Below you will find the relevant
+                historical objects along with their acquisition data and MLIC visualization links.</p>
+
+            <div class="artifact-grid">
+
+                <article class="artifact-card">
+                    <img src="data/santantioco_stele/santantioco_stele.png" alt="Image of Sant'Antioco Stele">
+                    <div class="artifact-info">
+                        <h3>Stele Tophet - INV. 6047</h3>
+                        <p><strong>Description:</strong> FIXME.</p>
+                        <p><strong>Type:</strong> FIXME</p>
+                        <p><strong>Material:</strong> FIXME</p>
+                        <p><strong>Dimension:</strong> FIXME</p>
+                        <p><strong>Acquisition Date:</strong> September 16, 2026</p>
+                        <p><strong>Location:</strong> Sant'Antioco, Italy</p>
+                        <p><strong>Partners:</strong> CRS4, SA</p>
+                        <p><strong>Toolkit Version:</strong> Basic Version</p>
+                        <a href="data/santantioco_stele" class="openlime-link" target="_blank"
+                            rel="noopener noreferrer">View
+                            in OpenLIME</a>
+                    </div>
+                </article>
+
+                <article class="artifact-card">
+                    <img src="data/lamina/lamina.png" alt="Image of Lamina">
+                    <div class="artifact-info">
+                        <h3>Lamina</h3>
+                        <p><strong>Description:</strong> FIXME.</p>
+                        <p><strong>Type:</strong> FIXME</p>
+                        <p><strong>Material:</strong> FIXME</p>
+                        <p><strong>Dimension:</strong> FIXME</p>
+                        <p><strong>Acquisition Date:</strong> 16 February, 2026</p>
+                        <p><strong>Location:</strong> Cagliari, Italy</p>
+                        <p><strong>Partners:</strong> CRS4, SA</p>
+                        <p><strong>Toolkit Version:</strong> Basic Version</p>
+                        <a href="data/lamina" class="openlime-link" target="_blank" rel="noopener noreferrer">View
+                            in OpenLIME</a>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- ==============================
+             SECTION: USE CASE 3
+             ============================== -->
+        <section id="use-case-3">
+            <h2>Use Case 3</h2>
+            <p>This section explores the digitized artifacts belonging to Use Case 3. Below you will find the relevant
+                historical objects along with their acquisition data and MLIC visualization links.</p>
+
+            <div class="artifact-grid">
+
+                <article class="artifact-card">
+                    <img src="data/linen_rv182/linen_rv182.png" alt="Image of Linen - RV 182">
+                    <div class="artifact-info">
+                        <h3>Linen - RV 182</h3>
+                        <p><strong>Description:</strong> Stuccoed linen of a mummy cover featuring pairs of gods.</p>
+                        <p><strong>Type:</strong> Cartonnage</p>
+                        <p><strong>Material:</strong> Linen</p>
+                        <p><strong>Dimension:</strong> 49,00 x 13,50 cm</p>
+                        <p><strong>Acquisition Date:</strong> July 20, 2026</p>
+                        <p><strong>Location:</strong> Munich, Germany</p>
+                        <p><strong>Partners:</strong> CRS4, SMÄK</p>
+                        <p><strong>Toolkit Version:</strong> Basic Version</p>
+                        <a href="data/linen_rv182" class="openlime-link" target="_blank" rel="noopener noreferrer">View
+                            in OpenLIME</a>
+                    </div>
+                </article>
+
+                <article class="artifact-card">
+                    <img src="data/linen_rv183/linen_rv183.png" alt="Image of Linen - RV 183">
+                    <div class="artifact-info">
+                        <h3>Linen - RV 183</h3>
+                        <p><strong>Description:</strong> Stuccoed linen of a mummy cover featuring Ba and a winged
+                            goddess.</p>
+                        <p><strong>Type:</strong> Cartonnage</p>
+                        <p><strong>Material:</strong> Linen</p>
+                        <p><strong>Dimension:</strong> 39,80 x 36,10 cm</p>
+                        <p><strong>Acquisition Date:</strong> July 20, 2026</p>
+                        <p><strong>Location:</strong> Munich, Germany</p>
+                        <p><strong>Partners:</strong> CRS4, SMÄK</p>
+                        <p><strong>Toolkit Version:</strong> Basic Version</p>
+                        <a href="data/linen_rv183" class="openlime-link" target="_blank" rel="noopener noreferrer">View
+                            in OpenLIME</a>
+                    </div>
+                </article>
+
+                <article class="artifact-card">
+                    <img src="data/linen_rv12/linen_rv12.png" alt="Image of RV 12">
+                    <div class="artifact-info">
+                        <h3>Linen - RV 12</h3>
+                        <p><strong>Description:</strong> Mummy Shroud "Feet"</p>
+                        <p><strong>Type:</strong> Mummy Shroud</p>
+                        <p><strong>Material:</strong> Linen</p>
+                        <p><strong>Dimension:</strong> ca 21,50 x 19,50 cm</p>
+                        <p><strong>Acquisition Date:</strong> July 20, 2026</p>
+                        <p><strong>Location:</strong> Munich, Germany</p>
+                        <p><strong>Partners:</strong> CRS4, SMÄK</p>
+                        <p><strong>Toolkit Version:</strong> Basic Version</p>
+                        <a href="data/linen_rv12" class="openlime-link" target="_blank" rel="noopener noreferrer">View
+                            in OpenLIME</a>
+                    </div>
+                </article>
+
+                <article class="artifact-card">
+                    <img src="data/linen_rv184/linen_rv184.png" alt="Image of RV 184">
+                    <div class="artifact-info">
+                        <h3>Linen - RV 184</h3>
+                        <p><strong>Description:</strong> Stuccoed linen of a mummy cover featuring a winged goddess</p>
+                        <p><strong>Type:</strong> Cartonnage</p>
+                        <p><strong>Material:</strong> Linen</p>
+                        <p><strong>Dimension:</strong> 35,60 x 14,30 cm</p>
+                        <p><strong>Acquisition Date:</strong> July 20, 2026</p>
+                        <p><strong>Location:</strong> Munich, Germany</p>
+                        <p><strong>Partners:</strong> CRS4, SMÄK</p>
+                        <p><strong>Toolkit Version:</strong> Basic Version</p>
+                        <a href="data/linen_rv184" class="openlime-link" target="_blank" rel="noopener noreferrer">View
+                            in OpenLIME</a>
+                    </div>
+                </article>
+
+                <article class="artifact-card">
+                    <img src="data/linen_rv185/linen_rv185.png" alt="Image of RV 185">
+                    <div class="artifact-info">
+                        <h3>Linen - RV 185</h3>
+                        <p><strong>Description:</strong> Stuccoed linen of a mummy cover featuring a Ba Bird over a
+                            mummy</p>
+                        <p><strong>Type:</strong> Cartonnage</p>
+                        <p><strong>Material:</strong> Linen</p>
+                        <p><strong>Dimension:</strong> 36,20 x 14,20 cm</p>
+                        <p><strong>Acquisition Date:</strong> July 20, 2026</p>
+                        <p><strong>Location:</strong> Munich, Germany</p>
+                        <p><strong>Partners:</strong> CRS4, SMÄK</p>
+                        <p><strong>Toolkit Version:</strong> Basic Version</p>
+                        <a href="data/linen_rv185" class="openlime-link" target="_blank" rel="noopener noreferrer">View
+                            in OpenLIME</a>
+                    </div>
+                </article>
+
+                <article class="artifact-card">
+                    <img src="data/relief_as5895a/relief_as5895a.png" alt="Image of ÄS 5895 a">
+                    <div class="artifact-info">
+                        <h3>Relief - ÄS 5895 a</h3>
+                        <p><strong>Description:</strong> Relief of the tomb of Bakenrenef</p>
+                        <p><strong>Type:</strong> Relief</p>
+                        <p><strong>Material:</strong> Limestone</p>
+                        <p><strong>Dimension:</strong> 31,00 x 64,50 x 1,70 cm</p>
+                        <p><strong>Acquisition Date:</strong> July 20, 2026</p>
+                        <p><strong>Location:</strong> Munich, Germany</p>
+                        <p><strong>Partners:</strong> CRS4, SMÄK</p>
+                        <p><strong>Toolkit Version:</strong> Basic Version</p>
+                        <a href="data/relief_as5895a" class="openlime-link" target="_blank"
+                            rel="noopener noreferrer">View
+                            in OpenLIME</a>
+                    </div>
+                </article>
+
+                <article class="artifact-card">
+                    <img src="data/relief_as5895b/relief_as5895b.png" alt="Image of ÄS 5895 b">
+                    <div class="artifact-info">
+                        <h3>Relief - ÄS 5895 b</h3>
+                        <p><strong>Description:</strong> Relief of the tomb of Bakenrenef</p>
+                        <p><strong>Type:</strong> Relief</p>
+                        <p><strong>Material:</strong> Limestone</p>
+                        <p><strong>Dimension:</strong> 31,00 x 51,00 x 1,70 cm</p>
+                        <p><strong>Acquisition Date:</strong> July 20, 2026</p>
+                        <p><strong>Location:</strong> Munich, Germany</p>
+                        <p><strong>Partners:</strong> CRS4, SMÄK</p>
+                        <p><strong>Toolkit Version:</strong> Basic Version</p>
+                        <a href="data/relief_as5895b" class="openlime-link" target="_blank"
+                            rel="noopener noreferrer">View
+                            in OpenLIME</a>
+                    </div>
+                </article>
+
+                <article class="artifact-card">
+                    <img src="data/relief_as5875/relief_as5875.png" alt="Image of ÄS 5875">
+                    <div class="artifact-info">
+                        <h3>Relief - ÄS 5875</h3>
+                        <p><strong>Description:</strong> Relief of the tomb of Bakenrenef</p>
+                        <p><strong>Type:</strong> Relief</p>
+                        <p><strong>Material:</strong> Limestone</p>
+                        <p><strong>Dimension:</strong> 20,50 x 31,00 x 0,80 cm</p>
+                        <p><strong>Acquisition Date:</strong> July 20, 2026</p>
+                        <p><strong>Location:</strong> Munich, Germany</p>
+                        <p><strong>Partners:</strong> CRS4, SMÄK</p>
+                        <p><strong>Toolkit Version:</strong> Basic Version</p>
+                        <a href="data/relief_as5875" class="openlime-link" target="_blank"
+                            rel="noopener noreferrer">View
+                            in OpenLIME</a>
+                    </div>
+                </article>
+
+                <article class="artifact-card">
+                    <img src="data/relief_rv453/relief_rv453.png" alt="Image of RV 453">
+                    <div class="artifact-info">
+                        <h3>Relief - RV 453</h3>
+                        <p><strong>Description:</strong> Relief of the tomb of Bakenrenef</p>
+                        <p><strong>Type:</strong> Relief</p>
+                        <p><strong>Material:</strong> Limestone</p>
+                        <p><strong>Dimension:</strong> 11,50 x 19,00 cm</p>
+                        <p><strong>Acquisition Date:</strong> July 20, 2026</p>
+                        <p><strong>Location:</strong> Munich, Germany</p>
+                        <p><strong>Partners:</strong> CRS4, SMÄK</p>
+                        <p><strong>Toolkit Version:</strong> Basic Version</p>
+                        <a href="data/relief_rv453" class="openlime-link" target="_blank" rel="noopener noreferrer">View
+                            in OpenLIME</a>
+                    </div>
+                </article>
+
+                <article class="artifact-card">
+                    <img src="data/stela_as8052/stela_as8052.png" alt="Image of ÄS 8052">
+                    <div class="artifact-info">
+                        <h3>Stela - ÄS 8052</h3>
+                        <p><strong>Description:</strong> Funerary stela depicting a married couple</p>
+                        <p><strong>Type:</strong> Stela</p>
+                        <p><strong>Material:</strong> Limestone</p>
+                        <p><strong>Dimension:</strong> 41,20 x 27,00 x 5,70 cm</p>
+                        <p><strong>Acquisition Date:</strong> July 20, 2026</p>
+                        <p><strong>Location:</strong> Munich, Germany</p>
+                        <p><strong>Partners:</strong> CRS4, SMÄK</p>
+                        <p><strong>Toolkit Version:</strong> Basic Version</p>
+                        <a href="data/stela_as8052" class="openlime-link" target="_blank" rel="noopener noreferrer">View
+                            in OpenLIME</a>
+                    </div>
+                </article>
+
+                <article class="artifact-card">
+                    <img src="data/mummy_as2972/mummy_as2972.png" alt="Image of ÄS 2972">
+                    <div class="artifact-info">
+                        <h3>Mummy - ÄS 2972</h3>
+                        <p><strong>Description:</strong> Mummy portrait of a Woman</p>
+                        <p><strong>Type:</strong> Mummy portrait</p>
+                        <p><strong>Material:</strong> Wood</p>
+                        <p><strong>Dimension:</strong> 33,50 x 21,10 x 0,90 cm</p>
+                        <p><strong>Acquisition Date:</strong> July 20, 2026</p>
+                        <p><strong>Location:</strong> Munich, Germany</p>
+                        <p><strong>Partners:</strong> CRS4, SMÄK</p>
+                        <p><strong>Toolkit Version:</strong> Basic Version</p>
+                        <a href="data/mummy_as2972" class="openlime-link" target="_blank" rel="noopener noreferrer">View
+                            in OpenLIME</a>
+                    </div>
+                </article>
+
+                <article class="artifact-card">
+                    <img src="data/mummy_as1/mummy_as1.png" alt="Image of ÄS 1">
+                    <div class="artifact-info">
+                        <h3>Mummy - ÄS 1</h3>
+                        <p><strong>Description:</strong> Mummy portrait of an elderly woman</p>
+                        <p><strong>Type:</strong> Mummy portrait</p>
+                        <p><strong>Material:</strong> Wood</p>
+                        <p><strong>Dimension:</strong> 41,50 x 24,90 x 0,80 cm</p>
+                        <p><strong>Acquisition Date:</strong> July 20, 2026</p>
+                        <p><strong>Location:</strong> Munich, Germany</p>
+                        <p><strong>Partners:</strong> CRS4, SMÄK</p>
+                        <p><strong>Toolkit Version:</strong> Basic Version</p>
+                        <a href="data/mummy_as1" class="openlime-link" target="_blank" rel="noopener noreferrer">View
+                            in OpenLIME</a>
+                    </div>
+                </article>
+
+                <article class="artifact-card">
+                    <img src="data/coffin_part_as1384_00/coffin_part_as1384_00.png" alt="Image of ÄS 1384">
+                    <div class="artifact-info">
+                        <h3>Coffin Part - ÄS 1384 - Front</h3>
+                        <p><strong>Description:</strong> Two doorwings as headboard of a coffin</p>
+                        <p><strong>Type:</strong> Part of coffin</p>
+                        <p><strong>Material:</strong> Wood</p>
+                        <p><strong>Dimension:</strong> 35,00 x 31,90 x 4,10 cm</p>
+                        <p><strong>Acquisition Date:</strong> July 20, 2026</p>
+                        <p><strong>Location:</strong> Munich, Germany</p>
+                        <p><strong>Partners:</strong> CRS4, SMÄK</p>
+                        <p><strong>Toolkit Version:</strong> Basic Version</p>
+                        <a href="data/coffin_part_as1384_00" class="openlime-link" target="_blank"
+                            rel="noopener noreferrer">View
+                            in OpenLIME</a>
+                    </div>
+                </article>
+
+                <article class="artifact-card">
+                    <img src="data/coffin_part_as1384_01/coffin_part_as1384_01.png" alt="Image of ÄS 1384">
+                    <div class="artifact-info">
+                        <h3>Coffin Part - ÄS 1384 - Back</h3>
+                        <p><strong>Description:</strong> Two doorwings as headboard of a coffin</p>
+                        <p><strong>Type:</strong> Part of coffin</p>
+                        <p><strong>Material:</strong> Wood</p>
+                        <p><strong>Dimension:</strong> 35,00 x 31,90 x 4,10 cm</p>
+                        <p><strong>Acquisition Date:</strong> July 20, 2026</p>
+                        <p><strong>Location:</strong> Munich, Germany</p>
+                        <p><strong>Partners:</strong> CRS4, SMÄK</p>
+                        <p><strong>Toolkit Version:</strong> Basic Version</p>
+                        <a href="data/coffin_part_as1384_01" class="openlime-link" target="_blank"
+                            rel="noopener noreferrer">View
+                            in OpenLIME</a>
+                    </div>
+                </article>
+
+                <article class="artifact-card">
+                    <img src="data/stela_as53/stela_as53.png" alt="Image of ÄS 53">
+                    <div class="artifact-info">
+                        <h3>Stela - ÄS 53</h3>
+                        <p><strong>Description:</strong> Funerary stela of Padiherpara</p>
+                        <p><strong>Type:</strong> Stela</p>
+                        <p><strong>Material:</strong> Wood</p>
+                        <p><strong>Dimension:</strong> 37,00 x 23,50 x 3,00 cm</p>
+                        <p><strong>Acquisition Date:</strong> July 20, 2026</p>
+                        <p><strong>Location:</strong> Munich, Germany</p>
+                        <p><strong>Partners:</strong> CRS4, SMÄK</p>
+                        <p><strong>Toolkit Version:</strong> Basic Version</p>
+                        <a href="data/stela_as53" class="openlime-link" target="_blank" rel="noopener noreferrer">View
+                            in OpenLIME</a>
+                    </div>
+                </article>
+
+                <article class="artifact-card">
+                    <img src="data/papyrus_leihgabe2_00/papyrus_leihgabe2_00.png" alt="Image of Leihgabe 2">
+                    <div class="artifact-info">
+                        <h3>Papyrus - Leihgabe 2 - Detail 1</h3>
+                        <p><strong>Description:</strong> Book of the Dead of Paiuheru</p>
+                        <p><strong>Type:</strong> Papyrus</p>
+                        <p><strong>Material:</strong> Papyrus</p>
+                        <p><strong>Dimension:</strong> 45,00 x 870,00 cm</p>
+                        <p><strong>Acquisition Date:</strong> July 20, 2026</p>
+                        <p><strong>Location:</strong> Munich, Germany</p>
+                        <p><strong>Partners:</strong> CRS4, SMÄK</p>
+                        <p><strong>Toolkit Version:</strong> Basic Version</p>
+                        <a href="data/papyrus_leihgabe2_00" class="openlime-link" target="_blank"
+                            rel="noopener noreferrer">View
+                            in OpenLIME</a>
+                    </div>
+                </article>
+
+                <article class="artifact-card">
+                    <img src="data/papyrus_leihgabe2_01/papyrus_leihgabe2_01.png" alt="Image of Leihgabe 2">
+                    <div class="artifact-info">
+                        <h3>Papyrus - Leihgabe 2 - Detail 2</h3>
+                        <p><strong>Description:</strong> Book of the Dead of Paiuheru</p>
+                        <p><strong>Type:</strong> Papyrus</p>
+                        <p><strong>Material:</strong> Papyrus</p>
+                        <p><strong>Dimension:</strong> 45,00 x 870,00 cm</p>
+                        <p><strong>Acquisition Date:</strong> July 20, 2026</p>
+                        <p><strong>Location:</strong> Munich, Germany</p>
+                        <p><strong>Partners:</strong> CRS4, SMÄK</p>
+                        <p><strong>Toolkit Version:</strong> Basic Version</p>
+                        <a href="data/papyrus_leihgabe2_01" class="openlime-link" target="_blank"
+                            rel="noopener noreferrer">View
+                            in OpenLIME</a>
+                    </div>
+                </article>
+
+                <article class="artifact-card">
+                    <img src="data/papyrus_leihgabe2_02/papyrus_leihgabe2_02.png" alt="Image of Leihgabe 2">
+                    <div class="artifact-info">
+                        <h3>Papyrus - Leihgabe 2 - Detail 3</h3>
+                        <p><strong>Description:</strong> Book of the Dead of Paiuheru</p>
+                        <p><strong>Type:</strong> Papyrus</p>
+                        <p><strong>Material:</strong> Papyrus</p>
+                        <p><strong>Dimension:</strong> 45,00 x 870,00 cm</p>
+                        <p><strong>Acquisition Date:</strong> July 20, 2026</p>
+                        <p><strong>Location:</strong> Munich, Germany</p>
+                        <p><strong>Partners:</strong> CRS4, SMÄK</p>
+                        <p><strong>Toolkit Version:</strong> Basic Version</p>
+                        <a href="data/papyrus_leihgabe2_02" class="openlime-link" target="_blank"
+                            rel="noopener noreferrer">View
+                            in OpenLIME</a>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+    </main>
+
+</body>
+
+</html>

@@ -1,0 +1,19 @@
+# Set the name of the authentication realm
+AuthName "excalibur/models"
+
+# Use Basic Authentication
+AuthType Basic
+
+# Disable directory listing
+Options -Indexes
+
+# Specify the location of the password file
+AuthUserFile /var/www/web-repo/excalibur/models/.htpasswd
+
+# Require a valid user to access the directory
+require valid-user
+
+# Prevent access to .htaccess and .htpasswd files
+<FilesMatch "^\.ht">
+    Require all denied
+</FilesMatch>
